@@ -3,6 +3,10 @@
     font-family: Bold;
     src: url("https://playvalorant.com/static/Tungsten-Bold_Web-b8e358744e51930f6b5d497dd1ce8bb7.woff2");
 }
+@font-face {
+    font-family: Vangok;
+    src: url('./bankgothic.otf');
+}
 
 body{
     background-color: black;
@@ -98,8 +102,8 @@ ul li:hover{
 #logo{
     width: 75px;
     fill: #f9f9f9;
-    margin: 0;
     transition: 0.3;
+    margin-top: 20%;
 }
 #logo:hover{
     transform: scale(1.1);
@@ -114,16 +118,6 @@ ul li:hover{
   'GRAD' 0,
   'opsz' 48
 }
-
-@font-face {
-    font-family: "DINNextW1G-Regular"; src: url("//db.onlinewebfonts.com/t/7bb508fd7255ec38b6f29cb4cf8668cf.eot");
-    src: url("//db.onlinewebfonts.com/t/7bb508fd7255ec38b6f29cb4cf8668cf.eot?#iefix") format("embedded-opentype"), 
-    url("//db.onlinewebfonts.com/t/7bb508fd7255ec38b6f29cb4cf8668cf.woff2") format("woff2"), 
-    url("//db.onlinewebfonts.com/t/7bb508fd7255ec38b6f29cb4cf8668cf.woff") format("woff"), 
-    url("//db.onlinewebfonts.com/t/7bb508fd7255ec38b6f29cb4cf8668cf.ttf") format("truetype"), 
-    url("//db.onlinewebfonts.com/t/7bb508fd7255ec38b6f29cb4cf8668cf.svg#DINNextW1G-Regular") format("svg"); 
-}
-
 /*Pagina index*/
 .m1{
     color: white;
@@ -132,7 +126,19 @@ ul li:hover{
 }
 
 /*Pagina Mapa*/
-
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container > div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.container > div:nth-child(odd){
+    flex-direction: row-reverse;
+}
+/*Mapas*/
 #mapa{
     padding: 1%;
     text-align: center;
@@ -142,66 +148,24 @@ ul li:hover{
     padding: 3%;
     width: 70%;
 }
-/*Foto 1*/
-#p1{
-    color: white;
-    font-size: 300%;
-    text-align: left;
+/*Foto */
+#foto{
+    max-width: 50%;
 }
 #p{
-    float: right;
-    width: 32%;
+    color: white;
+    font-size: 140%;
+    padding: 2%;
+    font-family: 'Cairo',sans-serif;
 }
 #p2{
     color: white;
-    font-size: 200%;
+    font-size: 800%;
+    text-align: center;
+    font-family: Vangok;
 }
-#img{
-    float:left;
-    padding: 2%;
-    width: 110%;
-}
-#img1{
-    float: left;
-    width: 60%;
-}
-/*Foto 2*/
-#img2{
-    float: right;
-    width: 60%;
-}
-#p3{
-    float: left;
-    width: 32%;
-    margin-left: 2%;
-}
-#imgg{
-    float: right;
-    padding: 2%;
-    width: 110%;
-}
-#pp3{
-    color: white;
-    font-size: 300%;
-    text-align: left;
-}
-#pp2{
-    color: white;
-    font-size: 200%;
-}
-/*Foto 3*/
-#p4{
-    float: right;
-    width: 60%;
-}
-#pp4{
-    color: white;
-    font-size: 300%;
-    text-align: right;
-}
-#pp5{
-    color: white;
-    font-size: 200%;
-    text-align: right;
+.l{
+    display: flex;
+    flex-direction: column;
 }
 
