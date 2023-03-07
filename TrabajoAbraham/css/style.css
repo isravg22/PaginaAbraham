@@ -8,6 +8,8 @@ body{
 	padding: 0;
 	box-sizing: border-box;
 }
+
+
 /*GIF*/
 .fullscreen-gif img {
     margin-top: 4.225%;
@@ -44,15 +46,19 @@ header  h1{
     margin-top: 2%;
     font-family: 'DINNextW1G-Regular';
 }
-
-.contenedor_principal #menu{
+/*MENU*/
+#menu{
     background-color: black;
     font-size: 30px;
     display: flex;
     position: fixed;
     width: 100%;
     justify-content: center;
-    transform:translateY(-25px) ;
+    transform:translateY(-29.8px) ;
+}
+
+#menu a{
+    color: white;
 }
 nav li{
 	list-style: none;
@@ -80,10 +86,9 @@ ul li:hover{
 	display: block;
     text-decoration: underline;
 }
-#menu a{
-    color: white;
-}
 
+
+/*LETRA*/
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,
@@ -127,7 +132,8 @@ ul li:hover{
     font-size: 300%;
 }
 #img{
-    float:left; margin-right:10px;
+    float:left;
+    margin-right:10px;
     padding: 2%;
 }
 
