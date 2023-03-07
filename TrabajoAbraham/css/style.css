@@ -94,7 +94,17 @@ ul li:hover{
     color: white;
     font-family: Bold;
 }
-
+/*Logo*/
+#logo{
+    width: 75px;
+    fill: #f9f9f9;
+    margin: 0;
+    transition: 0.3;
+}
+#logo:hover{
+    transform: scale(1.1);
+    transition: 0.3;
+}
 
 /*LETRA*/
 .material-symbols-outlined {
@@ -178,6 +188,20 @@ ul li:hover{
 #pp2{
     color: white;
     font-size: 200%;
-
+}
+/*Foto 3*/
+#p4{
+    float: right;
+    width: 60%;
+}
+#pp4{
+    color: white;
+    font-size: 300%;
+    text-align: right;
+}
+#pp5{
+    color: white;
+    font-size: 200%;
+    text-align: right;
 }
 
