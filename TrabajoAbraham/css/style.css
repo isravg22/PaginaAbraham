@@ -1,4 +1,8 @@
 @import url(//db.onlinewebfonts.com/c/7bb508fd7255ec38b6f29cb4cf8668cf?family=DINNextW1G-Regular);
+@font-face {
+    font-family: Bold;
+    src: url("https://playvalorant.com/static/Tungsten-Bold_Web-b8e358744e51930f6b5d497dd1ce8bb7.woff2");
+}
 
 body{
     background-color: black;
@@ -41,7 +45,7 @@ header p{
 }
 header  h1{
     text-transform: uppercase;
-    font-size: 150px;
+    font-size: 130px;
     justify-content: center;
     margin-top: 2%;
     font-family: 'DINNextW1G-Regular';
@@ -86,6 +90,10 @@ ul li:hover{
 	display: block;
     text-decoration: underline;
 }
+#menu a{
+    color: white;
+    font-family: Bold;
+}
 
 
 /*LETRA*/
@@ -116,8 +124,8 @@ ul li:hover{
 /*Pagina Mapa*/
 
 #mapa{
-    margin-left: 5%;
-    padding: 5%;
+    padding: 1%;
+    text-align: center;
 }
 #lotus{
     float: left;
@@ -126,15 +134,26 @@ ul li:hover{
 }
 #p1{
     color: white;
-    transform: translateY(35px);
-    justify-content: center;
-    float: right;
     font-size: 300%;
+    text-align: left;
+}
+#p{
+    float: right;
+    width: 32%;
+}
+#p2{
+    color: white;
+    font-size: 200%;
 }
 #img{
     float:left;
     margin-right:10px;
     padding: 2%;
+    width: 110%;
+}
+#img1{
+    float: left;
+    width: 60%;
 }
 
 #text1{
