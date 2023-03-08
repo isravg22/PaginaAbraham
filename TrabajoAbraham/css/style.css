@@ -62,7 +62,8 @@ header  h1{
     position: fixed;
     width: 100%;
     justify-content: center;
-    transform:translateY(-29.8px) ;
+    top: 0;
+    z-index: 9999;
 }
 
 #menu a{
@@ -119,10 +120,50 @@ ul li:hover{
   'opsz' 48
 }
 /*Pagina index*/
-.m1{
+
+#gecko{
+    max-width: 50%;
+    width: 300%;
+    transform: translateY(340px);
+}
+.div1{
+    display: flex;
+}
+#p1{
     color: white;
-    font-size: 25px;
-    transform: translateY(350px);
+    font-size: 170%;
+    padding: 6%;
+    font-family: 'Cairo',sans-serif;
+    transform: translateY(340px);
+}
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+}
+.contenedor > div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.contenedor > div:nth-child(odd){
+    flex-direction: row-reverse;
+}
+#p3{
+    color: white;
+    font-size: 140%;
+    padding: 6%;
+    font-family: 'Cairo',sans-serif;
+    transform: translateY(325px);
+}
+
+#vandal{
+    width: 220%;
+    height: 90%;
+    transform: translateY(310px);
+}
+.div2{
+    display: flex;
+    flex-direction: column;
 }
 
 /*Pagina Mapa*/
