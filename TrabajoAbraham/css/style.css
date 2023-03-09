@@ -56,7 +56,7 @@ header  h1{
 }
 /*MENU*/
 #menu{
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     font-size: 30px;
     display: flex;
     position: fixed;
@@ -157,7 +157,7 @@ ul li:hover{
 }
 
 #vandal{
-    width: 220%;
+    width: 65%;
     height: 90%;
     transform: translateY(310px);
 }
@@ -210,3 +210,85 @@ ul li:hover{
     flex-direction: column;
 }
 
+/*Pagina VCT*/
+
+#gifVCT{
+    margin-top: 4.225%;
+    position: absolute; /* posición absoluta en la ventana */
+    top: 0;
+    left: 0;
+    width: 100%; /* ancho del 100% de la ventana */
+    height: 50%; /* altura del 100% de la ventana */
+    object-fit: cover; /* ajustar la imagen para llenar todo el espacio */
+    z-index: -1; /* enviar la imagen al fondo */
+}
+#e2{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 35px;
+    transform: translateY(500px);
+}
+.p1{
+    font-size: 30px;    
+    color: white;
+    transform: translateY(526px);
+}
+#e3{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 35px;
+    transform: translateY(540px);
+}
+.emea{
+    color: white;
+    transform: translateY(560px);
+}
+.VCT{    
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*background: linear-gradient(to bottom,180deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 0%, rgba(0,212,255,1) 1000%);*/
+}
+.imagen {
+    position: relative;
+  }
+  
+  .imagen:hover img {
+    opacity: 0.5; /* cambia la opacidad de la imagen */
+  }
+  
+  .imagen .texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* oculta el texto por defecto */
+    transition: opacity 0.5s;
+     /* añade una transición suave */
+  }
+  
+  .imagen:hover .texto {
+    opacity: 1;
+    color: white; /* muestra el texto al pasar el ratón por encima */
+    z-index: 1; /* coloca el texto por encima de la imagen */
+  }
+  .imagen img{
+    width: 50%;
+    transform: translateY(550px);
+  }
+  .emea img{
+    width: 25%;
+  }
+  .emea{
+    font-size: 45px;
+  }
+  .KOI{
+    display: flex;
+  }
+  .roster{
+    color: white;
+    transform: translate(0px,650px);
+  }
