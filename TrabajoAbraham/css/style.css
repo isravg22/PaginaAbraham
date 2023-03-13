@@ -217,6 +217,7 @@ ul li:hover{
 /*Foto */
 #foto{
     max-width: 50%;
+    padding: 1%;
 }
 #p{
     color: white;
@@ -339,3 +340,91 @@ ul li:hover{
 #vctg h1{
     transform: translate(400px,-200px);
 }
+.imagen {
+    position: relative;
+  }
+  
+  .imagen:hover img {
+    opacity: 0.5; /* cambia la opacidad de la imagen */
+  }
+  
+  .imagen .texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* oculta el texto por defecto */
+    transition: opacity 0.5s;
+     /* añade una transición suave */
+  }
+  
+  .imagen:hover .texto {
+    opacity: 1;
+    color: white; /* muestra el texto al pasar el ratón por encima */
+    z-index: 1; /* coloca el texto por encima de la imagen */
+  }
+  .imagen img{
+    width: 50%;
+    transform: translateY(550px);
+  }
+  .emea img{
+    width: 25%;
+  }
+  .emea{
+    font-size: 45px;
+  }
+  .KOI{
+    display: flex;
+  }
+  .roster{
+    color: white;
+    transform: translate(0px,650px);
+  }
+/*Agentes*/
+    .containerAgent {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    z-index: 1;
+    position: relative;
+    transform: translateY(55px);
+    }
+    .containerAgent2 {
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 20px;
+    }
+  
+  .imagenAgent {
+    flex-basis: 30%;
+    transition: 0.3s;
+  }
+  .imgAgent2{
+    flex-basis: 30%;
+    transition: 0.3s;
+  }
+  .textAgent2{
+
+    flex-basis: 50%;
+    padding: 0 20px;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  .textAgent {
+
+    flex-basis: 50%;
+    padding: 0 20px;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+  }
+  .videeo{
+    position: fixed;
+    z-index: -1;
+  }
+  #agent:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+  }
