@@ -37,7 +37,7 @@ body{
     top: 0;
     left: 0;
     width: 100%; /* ancho del 100% de la ventana */
-    height: 80%; /* altura del 100% de la ventana */
+    height: 140%; /* altura del 100% de la ventana */
     object-fit: cover; /* ajustar la imagen para llenar todo el espacio */
     z-index: -1; /* enviar la imagen al fondo */
 }
@@ -49,6 +49,14 @@ header{
 .contenedor_principal{
     width: 100%;
     margin: 20px auto;
+}
+#contenedor_vct{
+    width: 100%;
+    margin: 20px auto;
+    background-color: #ff4655;
+    background-image: url("https://playvalorant.com/assets/images/background-sprite.png");
+    width: 100%;
+    background-repeat: no-repeat;
 }
 .c{
     background-color: #ff4655;
@@ -67,10 +75,17 @@ header p{
 }
 header  h1{
     text-transform: uppercase;
-    font-size: 130px;
+    font-size: 170px;
+    justify-content: center;
+    font-family: 'L';
+}
+#hh{
+    text-transform: uppercase;
+    font-size: 170px;
     justify-content: center;
     margin-top: 2%;
     font-family: 'L';
+    transform: translateY(55px);
 }
 /*MENU*/
 #menu{
@@ -264,14 +279,9 @@ ul li:hover{
 }
 
 /*Pagina VCT*/
-#vctG img{
-    margin-top: 4.225%; /* posición absoluta en la ventana */
-    top: 0;
-    left: 0;
-    width: 100%; /* ancho del 100% de la ventana */
-    height: 50%; /* altura del 100% de la ventana */
-    object-fit: cover; /* ajustar la imagen para llenar todo el espacio */
-    z-index: -1; /* enviar la imagen al fondo */
+.vctG{
+    transform: translateY(55px);
+    text-align: center;
 }
 .region {
     margin-top: 50px;
@@ -315,7 +325,6 @@ ul li:hover{
     margin: auto;
     width: 80%;
     height: 80%;
-    position: relative;
     z-index: 1;
 }
 
@@ -412,7 +421,6 @@ ul li:hover{
     display: flex;
     flex-direction: row;
     margin: 20px;
-    z-index: -1;
     position: relative;
     transform: translateY(55px);
     }
@@ -469,4 +477,12 @@ ul li:hover{
     width: 100%;
     background-color: #ff4655;
     background-image: url("https://playvalorant.com/assets/images/background-sprite.png");
+  }
+  /*Letras VCT*/
+  #h2VCT{
+    font-family: 'LL';
+    font-size: 500%;
+  }
+  #h2VCT{
+    font-family: 'LL';
   }
