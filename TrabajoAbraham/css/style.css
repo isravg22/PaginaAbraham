@@ -37,7 +37,7 @@ body{
     top: 0;
     left: 0;
     width: 100%; /* ancho del 100% de la ventana */
-    height: 140%; /* altura del 100% de la ventana */
+    height: 80%; /* altura del 100% de la ventana */
     object-fit: cover; /* ajustar la imagen para llenar todo el espacio */
     z-index: -1; /* enviar la imagen al fondo */
 }
@@ -49,14 +49,6 @@ header{
 .contenedor_principal{
     width: 100%;
     margin: 20px auto;
-}
-#contenedor_vct{
-    width: 100%;
-    margin: 20px auto;
-    background-color: #ff4655;
-    background-image: url("https://playvalorant.com/assets/images/background-sprite.png");
-    width: 100%;
-    background-repeat: no-repeat;
 }
 .c{
     background-color: #ff4655;
@@ -75,17 +67,10 @@ header p{
 }
 header  h1{
     text-transform: uppercase;
-    font-size: 170px;
-    justify-content: center;
-    font-family: 'L';
-}
-#hh{
-    text-transform: uppercase;
-    font-size: 170px;
+    font-size: 130px;
     justify-content: center;
     margin-top: 2%;
     font-family: 'L';
-    transform: translateY(55px);
 }
 /*MENU*/
 #menu{
@@ -158,32 +143,6 @@ ul li:hover{
     font-variation-settings: 'wght' 240;
     font-display: swap;
   }
-
-
-/*Footer*/
-
-.footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background: #000;
-    box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.6);
-    padding: 20px 0;
-  }
-  
-  .footer p {
-    margin: 0;
-    text-align: center;
-  }
-  
-  .footer a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  
-  
-
 
 /*Pagina index*/
 
@@ -279,9 +238,14 @@ ul li:hover{
 }
 
 /*Pagina VCT*/
-.vctG{
-    transform: translateY(55px);
-    text-align: center;
+#vctG img{
+    margin-top: 4.225%; /* posición absoluta en la ventana */
+    top: 0;
+    left: 0;
+    width: 100%; /* ancho del 100% de la ventana */
+    height: 50%; /* altura del 100% de la ventana */
+    object-fit: cover; /* ajustar la imagen para llenar todo el espacio */
+    z-index: -1; /* enviar la imagen al fondo */
 }
 .region {
     margin-top: 50px;
@@ -325,6 +289,7 @@ ul li:hover{
     margin: auto;
     width: 80%;
     height: 80%;
+    position: relative;
     z-index: 1;
 }
 
@@ -418,11 +383,12 @@ ul li:hover{
   }
 /*Agentes*/
     .containerAgent {
-    display: flex;
-    flex-direction: row;
-    margin: 20px;
-    position: relative;
-    transform: translateY(55px);
+        display: flex;
+        flex-direction: row;
+        margin: 20px;
+        z-index: -1;
+        position: relative;
+        transform: translateY(55px);
     }
     .containerAgent2 {
         display: flex;
@@ -478,11 +444,114 @@ ul li:hover{
     background-color: #ff4655;
     background-image: url("https://playvalorant.com/assets/images/background-sprite.png");
   }
-  /*Letras VCT*/
-  #h2VCT{
-    font-family: 'LL';
-    font-size: 500%;
+
+/*Pagina contacto*/
+
+
+.contenedorContacto {
+    max-width: 1500px;
+    height: 800px;
+	padding: 10px;
+	background-color: rgb(29, 36, 53);
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 29%;
+    margin-bottom: 2%;
+    margin-left: 170px;
+    
+    transform: translateY(-50px);
+}
+
+h1 {
+	text-align: center;
+    color: white;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+label {
+	font-weight: bold;
+	margin-bottom: 11px;
+    color: #ff4655;
+}
+
+input, textarea {
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+input[type="submit"] {
+	background-color: #ff4655;
+	color:white;
+	border: none;
+	border-radius: 5px;
+	padding: 10px;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	background-color: #3e8e41;
+}
+textarea{
+    resize: none;
+}
+
+/*footer*/
+
+.contenedor_footer{
+    display: flex;
+}
+footer {
+    background-color: #000000;    
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
   }
-  #h2VCT{
-    font-family: 'LL';
+  
+  .logoFooter{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
   }
+  
+  .logoFooter img {
+    width: 100px;
+    height: auto;
+  }
+  
+  .listaFooter {
+    display: flex;
+    justify-content: center;
+    transform: translate(300px,75px);
+  }
+  
+  .listaFooter li {
+    margin-right: 20px;
+  }
+  
+  .listaFooter a {
+    color: #a4a0a0;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .listaFooter a:hover {
+    color: #f00;
+  }
+
+    footer li{
+    list-style: none;
+  }
+  .logoVal{
+    transform: translate(900px,-15px);
+  }
+  .logoRiot{
+    transform: translate(700px,10px);
+  }
+
