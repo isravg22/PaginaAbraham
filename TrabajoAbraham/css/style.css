@@ -486,3 +486,110 @@ ul li:hover{
   #h2VCT{
     font-family: 'LL';
   }
+  /*Pagina contacto*/
+.contenedorContacto {
+    max-width: 1500px;
+    height: 800px;
+    padding: 10px;
+    background-color: rgb(29, 36, 53);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 29%;
+    margin-bottom: 2%;
+    margin-left: 170px;
+    
+    transform: translateY(-50px);
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 11px;
+    color: #ff4655;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #ff4655;
+    color:white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+textarea{
+    resize: none;
+}
+
+/*footer*/
+
+.contenedor_footer{
+    display: flex;
+}
+footer {
+    background-color: #000000;    
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .logoFooter{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .logoFooter img {
+    width: 100px;
+    height: auto;
+  }
+  
+  .listaFooter {
+    display: flex;
+    justify-content: center;
+    transform: translate(300px,75px);
+  }
+  
+  .listaFooter li {
+    margin-right: 20px;
+  }
+  
+  .listaFooter a {
+    color: #a4a0a0;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .listaFooter a:hover {
+    color: #f00;
+  }
+
+    footer li{
+    list-style: none;
+  }
+  .logoVal{
+    transform: translate(900px,-15px);
+  }
+  .logoRiot{
+    transform: translate(700px,10px);
+  }
